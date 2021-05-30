@@ -1,0 +1,140 @@
+html
+{
+    cursor: url(1.png) 4 12, auto;
+}
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+     
+}
+
+body
+{
+    position: relative;
+}
+
+
+.svg
+{
+    
+    position: relative;
+    top: 250px;
+    box-sizing: content-box;
+    left: 2800px;
+    width: fit-content;
+  
+}
+
+
+.tag
+{
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    transform: scale(20,20);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    -webkit-text-stroke: .01vw rgb(121, 121, 240);
+}
+h2
+{
+    position: absolute;
+    top: 500px;
+    left: 850px;
+    transform: scale(7,7);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    color: white;
+    -webkit-text-stroke: .01vw black;
+    
+
+}
+h2::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    animation: highlights 5s linear infinite ;
+
+}
+
+@keyframes highlights {
+    0%{
+        width: 0;
+    }
+    100%
+    {
+        width: 100%;
+    }
+    
+}
+
+#hand
+{
+ animation: writing  1s linear infinite alternate-reverse ;
+ transform-origin: bottom;
+}
+
+@keyframes writing {
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform:rotateY(8deg);
+    }
+   
+    
+}
+
+#heart
+{
+    animation: beating 1s linear infinite alternate-reverse;
+   transform-origin: center;
+}
+@keyframes beating {
+    from{
+        transform:scale();
+
+    }
+    to{
+        transform:scale(1.02,1.02);
+    }
+    
+}
+
+#shoe_male
+{
+    animation: styles 1s  linear infinite alternate-reverse;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes styles {
+    from{
+       transform:rotateZ(0deg);
+    }
+    to{
+        transform:rotateZ(-10deg);
+    }
+    
+}
+
+#window
+{
+ opacity: 110%;
+ 
+}
+
+#window1
+{
+ opacity: 110%;
+ 
+}
+
+
